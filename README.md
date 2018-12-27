@@ -30,7 +30,7 @@ Since cloning a specific folder can be a quite convoluted process via git, you c
     cd <your_project_root_folder>
     svn checkout https://github.com/lopespm/unity-camera-multi-target/trunk/Assets/CameraMultiTarget Assets/CameraMultiTarget
 
-Or if you wish to install the only the library without the example scene:
+Or if you wish to only install the library without the example scene:
 
     cd <your_project_root_folder>
     svn checkout https://github.com/lopespm/unity-camera-multi-target/trunk/Assets/CameraMultiTarget/Library Assets/CameraMultiTarget/Library
