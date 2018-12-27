@@ -13,7 +13,7 @@ The library was developed for, and used by my first Steam game, [Survival Ball](
 
 ### By importing CameraMultiTarget.unitypackage
 
-The pre-built package can be downloaded from the repository's releases [here](/releases/latest). After downloading the package, import it to your project via the Unity Editor *Assets -> Import Package -> Custom Package..*.
+The pre-built package can be downloaded from the repository's releases [here](releases/latest). After downloading the package, import it to your project via the Unity Editor *Assets -> Import Package -> Custom Package..*.
 
 ### Or by cloning this repository
 
