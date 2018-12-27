@@ -13,18 +13,27 @@ The library was developed for, and used by my first Steam game, [Survival Ball](
 
 ### By importing CameraMultiTarget.unitypackage
 
-The pre-built package can be downloaded from the repository's releases [here](https://github.com/lopespm/unity-camera-multi-target/releases/latest). After downloading the package, import it to your project via the Unity Editor *Assets -> Import Package -> Custom Package..*.
+The pre-built package can be downloaded from the repository's releases [here](https://github.com/lopespm/unity-camera-multi-target/releases/latest). After downloading the package, import it to your project via Unity Editor: *Assets -> Import Package -> Custom Package..*.
 
 ### Or by cloning this repository
+
+#### Git Clone
 
 This repository contains the complete Unity project which includes the library and an example usage scene. After you clone the entire repository using git, copy the *Assets/CameraMultiTarget* folder to your project
 
     git clone https://github.com/lopespm/unity-camera-multi-target.git
 
+#### SVN checkout of specific features
+
 Since cloning a specific folder can be a quite convoluted process via git, you can checkout the *Assets/CameraMultiTarget* folder directly to your project using SVN:
 
     cd <your_project_root_folder>
-    svn checkout https://github.com/lopespm/unity-camera-multi-target/trunk/Assets/CameraMultiTarget
+    svn checkout https://github.com/lopespm/unity-camera-multi-target/trunk/Assets/CameraMultiTarget Assets/CameraMultiTarget
+
+Or if you wish to install the library without the example scene:
+
+    cd <your_project_root_folder>
+    svn checkout https://github.com/lopespm/unity-camera-multi-target/trunk/Assets/CameraMultiTarget/Library Assets/CameraMultiTarget/Library
 
 
 ## Usage
@@ -36,9 +45,8 @@ For example, you can set the targets in your game controller component (if you c
     public class ExampleGameController : MonoBehaviour
     {
         public CameraMultiTarget cameraMultiTarget;
-        public GameObject targetPrefab;
     
-        private IEnumerator Start() {
+        private void Start() {
             var targets = new List<GameObject>();
             targets.Add(CreateTarget());
             targets.Add(CreateTarget());
