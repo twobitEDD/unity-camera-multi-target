@@ -1,8 +1,10 @@
 # Dynamic Multi Target Camera for Unity
 
-Concise Unity library which dynamically keeps a set of objects (e.g. players and important objects) in view, a common problem for a wide range of games.
+Concise Unity library which dynamically keeps a set of objects (e.g. players and important objects) in view, a common problem for a wide range of games. 
 
 The library was developed for, and used by my first Steam game, [Survival Ball](https://survivalball.com/). The game has an heavy shared screen local co-op component, which requires the camera to dynamically keep many key elements in view.
+
+More information about the library's inner workings and underlying math is available in the related [blog article](https://lopespm.github.io/libraries/games/2018/12/27/camera-multi-target.html)
 
 <img src="https://user-images.githubusercontent.com/3640622/50427667-19165c80-08a6-11e9-9306-6d05f7477262.jpg" alt="Camera Multi Target Example Scene Screenshot">
 
